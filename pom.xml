@@ -56,7 +56,6 @@
 				<version>1.12.0</version>
 				<configuration>
 					<installDirectory>target</installDirectory>
-					<workingDirectory>src/main/frontend</workingDirectory>
 					<nodeVersion>v16.13.0</nodeVersion>
 				</configuration>
 				<executions>
@@ -70,6 +69,12 @@
 						<id>npm install</id>
 						<goals>
 							<goal>npm</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>webpack build</id>
+						<goals>
+							<goal>webpack</goal>
 						</goals>
 					</execution>
 				</executions>
